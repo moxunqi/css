@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="15;url=" /
+		<link rel="stylesheet" type="text/css" href="css1.css" />
+		<style type="text/css">
+			p1{color: blue;}
+			#i1{color: green;}
+			p2{color: #0025;}
+			.c1{color: purple;}
+			#i2 p{color: orange;}
+			p3,.c2,#i3 .c3,h2{color: gray;}
+		</style>
+		<title>Day 7</title>
+	</head>
+	<body>
+		<h1><em>The 7th day of my prectice</em></h1>
+		<h2>CSS的引入</h2>
+		<h3 class="c2">外部样式表</h3>
+		<!--
+        	作者：3053615901@qq.com
+        	时间：2020-11-14
+        	描述：使用外部样式表后不能使用其他的样式表。
+        -->
+		<p0 class="c2">外部样式表使用link（自闭合标签）来链接一个外部样式表，link中包含href,type,rel三个属性
+		，href表示路径，type="text/css",rel="stylesheet"里的值是固定的，表示链接的是一个样式表</p0>
+		<h3 class="c2">内部样式表</h3>
+		<p1 class="c2">内部样式表使用style标签来引入，style包含type属性固定用type="text/css"来表示引入了一个标准的css文件</p1>
+		<h3 class="c2">行内样式表</h3>
+		<p style="color: red;">行内样式表是在标签写style属性，通过style的各种属性值来控制样式</p>
+		<hr />
+		<p class="c2">css由选择器，属性，属性值三部分组成，选择器指css通过什么来选中要改变样式的标签，属性是指标签能拥有的样式属性，属性值
+		为样式属性的取值</p>
+		<h2 class="c2">css选择器</h2>
+		<p class="c2">常用选择器有id,class,元素，后代，群体选择器</p>
+		<h3 class="c2">元素选择器</h3>
+		<p2>元素选择器用标签种类来选中标签（注：p标签，h标签有多种写法如：p1,p2,h1,h2,p3）</p2>
+		<h3 class="c2">id选择器</h3>
+		<p id="i1">通过id名（#abab）来选中元素</p>
+		<h3 class="c1">class选择器</h3>
+		<p class="c1">通过class名（.abab）来选中元素(相同或不同)</p>
+                                                     <!--
+                                                     	作者：3053615901@qq.com
+                                                     	时间：2020-11-14
+                                                     	描述：id,class名应当以字母开头
+                                                     -->
+        <div id="i2">
+		<h3 class="c2">后代选择器</h3>
+		<p3>逐级选中元素，从父元素开始选中(用id，class,元素选择器)直到选中指定元素，两元素之间用空格空开</p>
+		</div>
+		<div id="i3">
+		<h3 class="c3">群体选择器</h3>
+		<p class="c3">指同时对几个选择器进行相同操作，选择器之间用逗号隔开</p>
+		</div>
+	</body>
+</html>
